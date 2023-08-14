@@ -1,17 +1,19 @@
-ports:
-  - port: 5000
-    onOpen: open-preview
-    description: Flask App preview
+image:
+  file: .gitpod.Dockerfile
 
-tasks:
-  - init: |
-      export FLASK_APP=flaskr
-      export FLASK_ENV=development
-      pip install -e .
-      flask init-db
-  - command: |
-      flask run
+ports:
+    - port: 3000
+      onOpen: ignore
 
 vscode:
   extensions:
-    - ms-python.python
+    - learnpack.learnpack-vscode
+    
+github:
+    prebuilds:
+        # enable for the master/default branch (defaults to true)
+        master: true
+        # enable for pull requests coming from this repo (defaults to true)
+        pullRequests: false
+        # add a "Review in Gitpod" button as a comment to pull requests (defaults to true)
+        addComment: false
