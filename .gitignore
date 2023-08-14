@@ -1,5 +1,3 @@
-
-# configuration and readme
 !.gitignore
 !.gitpod.yml
 .theia
@@ -8,7 +6,6 @@
 !learn.json
 !README.md
 
-# learn exercises
 !/.learn
 /.learn/**
 !/.learn/bc.json
@@ -18,7 +15,6 @@
 !/.learn/assets
 !/.learn/assets/**
 
-# python garbage
 *.pyc
 .venv
 conftest.py
